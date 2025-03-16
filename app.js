@@ -21,9 +21,9 @@ app.use(fileUpload({
 }))
 
 // *********************
-const userRoute=require('../Youtube/Routes/user');
-const videoRoute=require('../Youtube/Routes/video');
-const commentRoute=require('../Youtube/Routes/comment');
+const userRoute=require('./Routes/user');
+const videoRoute=require('./Routes/video');
+const commentRoute=require('./Routes/comment');
 
 app.use('/user',userRoute);
 app.use('/video',videoRoute);
